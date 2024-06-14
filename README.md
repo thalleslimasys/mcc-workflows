@@ -73,38 +73,38 @@ Pour utiliser ce gabarit comme base pour votre propre projet, suivez les étapes
 
    Vous pouvez ouvrir ce projet directement dans un DevContainer dans VS Code en cliquant sur le lien ci-dessous:
 
-   [![Ouvrir dans DevContainer](https://img.shields.io/badge/Vue%20DevContainer-Open%20in%20VS%20Code-blue?logo=visual-studio-code&style=for-the-badge)](vscode://vscode-remote/uri/github.com/arches-mcc/gabarit-python)
+   [![Ouvrir dans DevContainer](https://img.shields.io/static/v1?label=Open%20in%20Dev%20%20Container&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/arches-mcc/gabarit-python)
 
 ## Structure du Projet
 
 Voici une vue d'ensemble de la structure du projet incluse dans ce gabarit :
 
-``` bash
+``` shell
 gabarit-python/
 │
-├── .devcontainer/
+├── 📁.devcontainer/
 │ ├── Dockerfile
 │ ├── devcontainer.json
 │
-├── src/
+├── 📁src/
 │ ├── init.py
 │ └── main.py
 │
-├── .github/
+├── 📁.github/
 │ └── workflows/
 │ └── python-app.yml
 │
-├── .vscode/
+├── 📁.vscode/
 │ ├── settings.json
 │ └── extensions.json
 │
-├── tests/
+├── 📁tests/
 │ ├── init.py
 │ └── test_main.py
 │
-├── .gitignore
-├── README.md
-├── requirements.txt
+├── 📄.gitignore
+├── 📄README.md
+├── 📄requirements.txt
 └── setup.py
 ```
 
