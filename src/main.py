@@ -24,7 +24,8 @@ class Greeter:
         """
         return f"Bonjour, {nom}!"
 
+
 if __name__ == "__main__":
     greeter = Greeter()
-    message = greeter.greet("le Monde!")
+    message = greeter.greet("le monde")
     print(message)
