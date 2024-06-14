@@ -1,0 +1,51 @@
+{
+    "name": "Python DevContainer",
+    "dockerFile": "../Dockerfile",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-python.pylint",
+                "EditorConfig.EditorConfig",
+                "ms-azuretools.vscode-docker",
+                "esbenp.prettier-vscode",
+                "christian-kohler.path-intellisense",
+                "njpwerner.autodocstring",
+                "dbaeumer.vscode-eslint",
+                "christian-kohler.npm-intellisense",
+                "tamasfe.even-better-toml",
+                "donjayamanne.python-environment-manager",
+                "mtxr.sqltools",
+                "mtxr.sqltools-driver-pg",
+                "vsls-contrib.codetour",
+                "streetsidesoftware.code-spell-checker",
+                "streetsidesoftware.code-spell-checker-french",
+                "yzhang.markdown-all-in-one",
+                "DavidAnson.vscode-markdownlint",
+                "bierner.markdown-preview-github-styles",
+                "bierner.markdown-emoji",
+                "darkriszty.markdown-table-prettify",
+                "jebbs.markdown-extended",
+                "aaron-bond.better-comments",
+                "wayou.vscode-todo-highlight",
+                "hediet.vscode-drawio",
+                "humao.rest-client",
+                "ms-vsliveshare.vsliveshare",
+                "Davidsekar.redis-xplorer"
+            ]
+        },
+        "settings": {
+            "python.pythonPath": "/usr/local/bin/python",
+            "python.linting.enabled": true,
+            "python.linting.pylintEnabled": true,
+            "python.linting.flake8Enabled": true
+        }
+    },
+    "postCreateCommand": "pip install -r requirements.txt",
+  
+    // Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+    // Using vscode is not compatible with this setup as /workspaces/ is with root:root owner
+    // "remoteUser": "vscode"
+    "remoteUser": "root"
+}
