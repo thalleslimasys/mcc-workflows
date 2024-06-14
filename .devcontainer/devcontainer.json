@@ -32,7 +32,8 @@
                 "hediet.vscode-drawio",
                 "humao.rest-client",
                 "ms-vsliveshare.vsliveshare",
-                "Davidsekar.redis-xplorer"
+                "Davidsekar.redis-xplorer",
+                "github.vscode-github-actions"
             ]
         },
         "settings": {

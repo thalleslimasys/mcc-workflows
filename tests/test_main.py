@@ -16,7 +16,7 @@ class TestGreeter(unittest.TestCase):
         """
         Teste la méthode greet de la classe Greeter.
 
-        Vérifie que la méthode greet retourne "Bonjour, le monde!" 
+        Vérifie que la méthode greet retourne "Bonjour, le monde!"
         lorsqu'elle est appelée avec "le monde".
         """
         greeter = Greeter()
