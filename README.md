@@ -68,7 +68,12 @@ Pour utiliser ce gabarit comme base pour votre propre projet, suivez les étapes
 
    - Ouvrez le projet dans Visual Studio Code.
    - Si vous avez l'extension Remote - Containers installée, VS Code vous proposera d'ouvrir le projet dans un DevContainer. Acceptez cette proposition.
-   - Si ce n'est pas le cas, vous pouvez ouvrir la palette de commandes (`Ctrl+Shift+P` ou `Cmd+Shift+P` sur macOS) et exécuter `Remote-Containers: Reopen in Container`.
+
+### Ouvrir Directement dans un DevContainer
+
+   Vous pouvez ouvrir ce projet directement dans un DevContainer dans VS Code en cliquant sur le lien ci-dessous:
+
+   [![Ouvrir dans DevContainer](https://img.shields.io/badge/Vue%20DevContainer-Open%20in%20VS%20Code-blue?logo=visual-studio-code&style=for-the-badge)](vscode://vscode-remote/uri/github.com/arches-mcc/gabarit-python)
 
 ## Structure du Projet
 
