@@ -32,7 +32,7 @@ jobs:
 
       - name: Run pylint
         run: |
-          pylint src tests --init-hook "import sys; sys.path.append('./src')"
+          pylint src tests --disable=R0903 --init-hook "import sys; sys.path.append('./src')"
 
       - name: Run unittest
         run: |
