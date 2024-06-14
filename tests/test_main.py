@@ -1,3 +1,7 @@
+"""
+Module de test pour la classe Greeter.
+"""
+
 import unittest
 from src.main import Greeter
 

@@ -1,3 +1,8 @@
+"""
+Module principal pour démontrer une classe Greeter simple.
+"""
+
+
 class Greeter:
     """
     Une classe simple Greeter pour démontrer une implémentation de base.

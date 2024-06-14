@@ -1,6 +1,10 @@
 {
     "name": "Python DevContainer",
     "dockerFile": "../Dockerfile",
+    "workspaceFolder": "/workspace",
+    "mounts": [
+        "source=${localWorkspaceFolder},target=/workspace,type=bind"
+    ],
     "customizations": {
         "vscode": {
             "extensions": [
@@ -37,7 +41,7 @@
             ]
         },
         "settings": {
-            "python.pythonPath": "/usr/local/bin/python",
+            "python.defaultInterpreterPath": "/usr/local/bin/python3.11",
             "python.linting.enabled": true,
             "python.linting.pylintEnabled": true,
             "python.linting.flake8Enabled": true

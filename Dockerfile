@@ -1,5 +1,5 @@
 # Utiliser l'image officielle de Python
-FROM python:3.9-slim
+FROM python:3.11-slim
 
 # Installer les dépendances de base y compris git
 RUN apt-get update && apt-get install -y \
