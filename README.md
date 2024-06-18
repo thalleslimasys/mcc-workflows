@@ -69,6 +69,7 @@ gabarit-python/
 │
 ├── 📁.github/
 │ └── 📁workflows/
+│     ├── 📄ci.yml
 │     └── 📄python-app.yml
 │
 ├── 📁.vscode/
