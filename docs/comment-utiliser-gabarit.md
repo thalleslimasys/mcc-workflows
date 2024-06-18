@@ -41,3 +41,5 @@ Pour utiliser ce gabarit comme base pour votre propre projet, suivez les étapes
 5. **Configurer bouton DevContainer**
 
    - Pour configurer le bouton qui lance le DevContainer dans VS Code directement à partir de GitHub pour votre nouveau répertoire, vous devez modifier la fin du lien pour qu'il redirige vers le nouveau dépôt. Par exemple, où il est écrit `/gabarit-python`, il devrait être `/nouveau-repo`.
+
+   > Attention : Lors de l'utilisation du bouton, le DevContainer sera toujours ouvert sur la branche main. Assurez-vous que la branche main est correctement configurée pour le développement avec DevContainer.  Soyez attentif si votre travail doit être fait dans une autre branche.

@@ -16,6 +16,8 @@ Vous pouvez ouvrir ce projet directement dans un DevContainer dans VS Code en cl
 
 [![Ouvrir dans DevContainer](https://img.shields.io/static/v1?label=Open%20in%20Dev%20%20Container&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/arches-mcc/gabarit-python)
 
+> Attention : Lors de l'utilisation du bouton, le DevContainer sera toujours ouvert sur la branche main. Soyez attentif si votre travail doit être fait dans une autre branche.
+
 ## Contenu du Gabarit
 
 - **Dockerfile** configuré pour Python 3.x.
