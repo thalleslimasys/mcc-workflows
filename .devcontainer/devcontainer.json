@@ -1,12 +1,14 @@
 {
     "name": "Python DevContainer",
     "dockerFile": "../Dockerfile",
-    "workspaceFolder": "/workspace",
-    "mounts": [
-        "source=${localWorkspaceFolder},target=/workspace,type=bind"
-    ],
+    "workspaceFolder": "/workspaces",
+    "containerEnv": {
+      "TZ": "America/Toronto",
+      "PIP_ROOT_USER_ACTION": "ignore"
+    },
     "customizations": {
         "vscode": {
+            "openFiles": ["README.md"],
             "extensions": [
                 "ms-python.python",
                 "ms-python.vscode-pylance",
@@ -40,10 +42,12 @@
                 "github.vscode-github-actions"
             ]
         },
-        "settings": {
-            "python.defaultInterpreterPath": "/usr/local/bin/python3.11",
+        "settings": {            
+            "python.pythonPath": "/usr/local/bin/python",
+            "python.languageServer": "Pylance",
             "python.linting.enabled": true,
             "python.linting.pylintEnabled": true,
+            "cSpell.language": "fr,en",
             "python.linting.flake8Enabled": true
         }
     },
