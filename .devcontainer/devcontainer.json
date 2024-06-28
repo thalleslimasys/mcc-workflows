@@ -44,7 +44,6 @@
     },
     "settings": {
       "python.pythonPath": "/usr/local/bin/python",
-      "terminal.integrated.cwd": "/workspaces/gabarit-python",
       "python.languageServer": "Pylance",
       "python.linting.enabled": true,
       "python.linting.pylintEnabled": true,
@@ -52,7 +51,7 @@
       "python.linting.flake8Enabled": true
     }
   },
-  "postCreateCommand": "pip install -r gabarit-python/requirements.txt",
+  "postCreateCommand": "pip install -r requirements.txt",
   "features": {
     "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {},
     "ghcr.io/devcontainers/features/node:1": {
