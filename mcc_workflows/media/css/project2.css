@@ -1,0 +1,134 @@
+.workflow-summary-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  background-color: #F7F9FB;
+  overflow: hidden;
+}
+
+.workflow-summary-header {
+  background-color: #004577;
+  padding: 15px;
+  flex: 0 0 auto;
+}
+
+.rapport-dropdown {
+  display: block;
+  width: 33%;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.workflow-summary-filters {
+  position: relative;
+  z-index: inherit;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.workflow-summary-body {
+  flex: 1;
+  overflow-x: auto !important;
+  overflow-y: auto !important;
+  width: 100%;
+  background-color: whitesmoke;
+  max-height: calc(100vh - 85px);
+}
+
+
+
+.btn-rapport {
+  flex: 0 0 auto;
+  width: 5%;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.btn-pages {
+  background-color: whitesmoke;
+}
+
+.select-item-page {
+  width: 50px;
+  padding: 8px;
+  border: 2px solid #007BFF;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+}
+
+
+.select-style::after {
+  content: '\25BC';
+  color: #007BFF;
+  right: 10px;
+  position: absolute;
+  pointer-events: none;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.select-style:focus {
+  border-color: #0056b3;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+.rapport-footer {
+  background-color: #004577;
+  padding: 10px;
+  text-align: center;
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.table-raport {
+  width: max-content;
+  min-width: 100%;
+  border-collapse: collapse;
+  max-width: inherit;
+}
+
+.table-raport th,
+.table-raport td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.final-step-item-heading{
+  font-weight: bold;
+  width: 33%;
+  justify-content: center;
+}
+
+.final-step-panel-body{
+  width: 33%;
+  justify-content: center;
+}
+
+.wrap-panel{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap-color{
+  width: 100vw;
+  margin-top: 30px;
+}

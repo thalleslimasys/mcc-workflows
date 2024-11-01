@@ -1,0 +1,91 @@
+{% load i18n %}
+{% load static %}
+
+
+<!-- <style>
+  .rapport-footer {
+    background-color: red;
+    padding: 10px;
+    text-align: center;
+    flex: 0 0 auto;
+    position: relative;
+  }
+</style> -->
+
+
+<!-- Inclut la feuille de style pour les icônes Bootstrap -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+<!-- Conteneur principal pour le rapport basique -->
+<div class="workflow-summary-container">
+
+  <!-- En-tête du rapport basique, contenant les filtres et les contrôles -->
+  <div class="workflow-summary-header">
+    <div class="workflow-summary-filters">
+
+      <!-- Bouton pour passer à la page précédente -->
+      <!-- <button type="button" class="btn btn-secondary btn-pages" style="margin-left: 10px; margin-right: 10px;"
+        data-bind="enable: hasPrevious, click: getPreviousPage">
+        <i class="bi bi-chevron-left"></i>
+      </button> -->
+
+      <!-- Affiche le numéro de la page actuelle -->
+      <!-- <span class="badge badge-secondary" data-bind="text: currentPage"></span> -->
+
+      <!-- Bouton pour passer à la page suivante -->
+      <!-- <button type="button" class="btn btn-secondary btn-pages" style="margin-left: 10px; margin-right: 10px;"
+        data-bind="enable : hasNext, click: getNextPage">
+        <i class="bi bi-chevron-right"></i>
+      </button> -->
+
+    </div>
+  </div>
+
+  <!-- Corps du rapport basique, affiché seulement s'il y a des colonnes -->
+  <div class="workflow-summary-body">
+
+    <!-- Table pour afficher les données -->
+    <table class="table table-striped table-bordered table-hover table-sm table-raport">
+      <thead>
+        <tr>
+          <!-- Boucle sur les colonnes pour afficher les en-têtes -->
+          <!-- ko foreach: cols -->
+          <!-- Exclusion de certaines colonnes spécifiques -->
+          <!-- ko if: $data !== 'userId' -->
+          <th data-bind="text: $data"></th> <!-- Affiche le nom de la colonne -->
+          <!-- /ko -->
+          <!-- /ko -->
+        </tr>
+      </thead>
+      <tbody data-bind="foreach: data">
+        <tr>
+          <!-- Boucle sur les données pour chaque ligne -->
+          <!-- ko foreach: $parent.cols -->
+          <!-- Exclusion de certaines données spécifiques -->
+          <!-- ko if: $data !== 'userId' -->
+          <td scope="row">
+            <!-- ko if: $data === 'workflowId' -->
+            <a target="_blank"
+              data-bind="attr: { href: 'premier-workflow?workflow-id=' + $parent[$data] }, text: $parent[$data], style: { cursor: 'pointer' }"></a>
+            <!-- /ko -->
+            <!-- ko if: $data !== 'workflowId' -->
+            <span data-bind="text: $parent[$data]"></span>
+            <!-- /ko -->
+          </td> <!-- Affiche les données pour chaque cellule -->
+          <!-- /ko -->
+          <!-- /ko -->
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+  <div class="rapport-footer">
+    <!-- Sélecteur pour le nombre d'éléments par page -->
+    <!-- <select class="custom-select select-item-page" data-bind="
+    selectedOptions: selectedItemPerPage,
+    options: itemPerPage,
+    event: {change: getGraphData}"></select> -->
+    <!-- Événement à déclencher au changement -->
+  </div>
+</div>

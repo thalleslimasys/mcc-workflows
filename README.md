@@ -2,29 +2,27 @@
 
 ## Introduction
 
-Ce dépôt sert de gabarit pour la création de projets Python avec un environnement de développement standardisé en utilisant DevContainer. Il inclut toutes les configurations nécessaires pour démarrer rapidement un projet Python, y compris les dépendances courantes, les configurations/extensions de l'éditeur et les outils de développement.
-
-> **Note**: Pour commencer votre propre projet en utilisant ce gabarit, veuillez consulter la section [comment utiliser ce gabarit](./docs/comment-utiliser-gabarit.md).
+Ce dépôt sert de base pour le développement d’extensions de workflows pour le projet Arches en utilisant Django.
 
 ## Objectif
 
-Fournir un environnement de développement cohérent et reproductible pour les projets Python.
+Fournir un environnement de développement standardisé pour créer des workflows personnalisés dans le cadre du projet Arches, en utilisant Django pour structurer et gérer les workflows.
 
 ## Ouvrir Directement dans un DevContainer
 
 Vous pouvez ouvrir ce projet directement dans un DevContainer dans VS Code en cliquant sur le lien ci-dessous:
 
-[![Ouvrir dans DevContainer](https://img.shields.io/static/v1?label=Open%20in%20Dev%20%20Container&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/arches-mcc/gabarit-python)
+[![Ouvrir dans DevContainer](https://img.shields.io/static/v1?label=Open%20in%20Dev%20%20Container&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/thalleslimasys/mcc-workflows)
 
 > Attention : Lors de l'utilisation du bouton, le DevContainer sera toujours ouvert sur la branche main. Soyez attentif si votre travail doit être fait dans une autre branche.
 
 ## Contenu du Gabarit
 
-- **Dockerfile** configuré pour Python 3.x.
+- **Dockerfile** configuré pour Python 3.x et les besoins de Django.
 - **devcontainer.json** pour les paramètres spécifiques du DevContainer.
-- Inclusion des dépendances de base comme `pip` et autres librairies couramment utilisées.
+- Inclusion des dépendances de base pour Django et Arches.
 - Intégration avec Visual Studio Code pour une expérience de développement optimisée.
-- Documentation pour l'installation et l'utilisation du DevContainer.
+- Documentation pour l'installation et l'utilisation des workflows dans le contexte du projet Arches.
 
 ## Prise en Main
 
@@ -58,15 +56,24 @@ Le fichier `.vscode/settings.json` contient les configurations spécifiques à l
 Voici une vue d'ensemble de la structure du projet incluse dans ce gabarit :
 
 ``` shell
-gabarit-python/
+mcc-workflows/
 │
 ├── 📁.devcontainer/
 │ └── 📄devcontainer.json
 │
-├── 📁src/
-│ ├── 📄init.py
-│ └── 📄main.py
-│
+├── 📁mcc_workflows/
+│    │
+│    ├── 📁media/
+│    ├── 📁migrations/
+│    ├── 📁templates/
+│    ├── 📄__init__.py
+│    ├── 📄admin.py
+│    ├── 📄apps.py
+│    ├── 📄models.py
+│    ├── 📄tests.py
+│    ├── 📄urls.py
+│    └── 📄views.py
+│ 
 ├── 📁.github/
 │ └── 📁workflows/
 │     ├── 📄ci.yml
@@ -81,9 +88,11 @@ gabarit-python/
 │ └── 📄test_main.py
 │
 ├── 📄.gitignore
+├── 📄Dockerfile
+├── 📄MANIFEST.in
+├── 📄pyproject.toml
 ├── 📄README.md
 ├── 📄requirements.txt
-├── 📄Dockerfile
 └── 📄setup.py
 ```
 
