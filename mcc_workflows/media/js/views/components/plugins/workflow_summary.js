@@ -30,7 +30,7 @@ define([
           },
           error: function (xhr, status, error) {
             debugger;
-            console.error("Erro ao buscar os dados do dashboard:", error);
+            console.error("Erreur lors de la récupération des données du workflow:", error);
           }
         });
       };
