@@ -63,7 +63,7 @@ mcc-workflows/
 ├── 📁.devcontainer/
 │ └── 📄devcontainer.json
 │
-├── 📁mcc_workflows/
+├── 📁workflows/
 │    │
 │    ├── 📁media/
 │    ├── 📁migrations/

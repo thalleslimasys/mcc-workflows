@@ -1,3 +1,1 @@
-include README.md
-recursive-include mcc_workflows/media *
-recursive-include mcc_workflows/templates *
+graft *

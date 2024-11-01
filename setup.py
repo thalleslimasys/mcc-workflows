@@ -13,7 +13,7 @@ https://setuptools.pypa.io/en/latest/userguide/quickstart.html
 from setuptools import setup, find_packages
 
 setup(
-    name="mcc_workflows",
+    name="workflows",
     version="0.0.1",
     description="",
     url="https://github.com/thalleslimasys/mcc-workflows",

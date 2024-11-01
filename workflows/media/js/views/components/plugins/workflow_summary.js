@@ -21,7 +21,6 @@ define([
           method: "GET",
           dataType: "json",
           success: function (response) {
-            debugger;
             response = JSON.parse(response);
             self.workflowCount(response.workflow_count);
             self.data(response.workflows);
@@ -34,22 +33,6 @@ define([
           }
         });
       };
-
-      function capitalizeKeysInObjects(str) {
-        return str.map(text => {
-          let newStr = capitalizeWords(text);
-          return newStr;
-        });
-      }
-
-      function capitalizeWords(input) {
-        const sanitizedInput = input.replace(/_/g, ' ');
-        const words = sanitizedInput.toLowerCase().split(' ');
-        const capitalizedWords = words.map(word =>
-          word.charAt(0).toUpperCase() + word.slice(1)
-        );
-        return capitalizedWords.join(' ');
-      }
 
       this.getStatus();
     },

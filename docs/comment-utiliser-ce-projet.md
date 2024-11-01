@@ -8,22 +8,22 @@ You can add the dashboard to an Arches project in just a few easy steps.
 pip install git+https://github.com/thalleslimasys/mcc-workflows
 ```
 
-- Add `"mcc_workflows"` to the INSTALLED_APPS setting in the demo project's settings.py file below the demo project
+- Add `"workflows"` to the INSTALLED_APPS setting in the demo project's settings.py file below the demo project
 
 ``` python
 INSTALLED_APPS = [
     ...
-    "demo",
-    "mcc_workflows",
+    "app",
+    "workflows",
 ]
 ```
 
-- Version your dependency on `"mcc_workflows"` in `pyproject.toml`:
+- Version your dependency on `"workflows"` in `pyproject.toml`:
 
 ``` python
 dependencies = [
     "arches>=7.6.0,<7.7.0",
-    "mcc_workflows==0.0.1",
+    "workflows==0.0.1",
 ]
 ```
 
@@ -36,7 +36,7 @@ from django.urls import include, path
 and then the following path:
 
 ```python
-path("", include("mcc_workflows.urls")),
+path("", include("workflows.urls")),
 ```
 
 - Next be sure to rebuild your project's frontend to include the plugin
