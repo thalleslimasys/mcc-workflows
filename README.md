@@ -4,6 +4,8 @@
 
 Ce dépôt sert de base pour le développement d’extensions de workflows pour le projet Arches en utilisant Django.
 
+> **Note**: Pour utiliser ce projet, veuillez consulter la section [comment utiliser ce projet](./docs/comment-utiliser-ce-projet.md).
+
 ## Objectif
 
 Fournir un environnement de développement standardisé pour créer des workflows personnalisés dans le cadre du projet Arches, en utilisant Django pour structurer et gérer les workflows.
